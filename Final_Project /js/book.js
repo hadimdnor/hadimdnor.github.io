@@ -42,7 +42,7 @@ function bookCourtNow(userName, userEmail, userCourt, userHour,userRemarks){
     .then(json => {
         // Do something with object
         console.log(json.courtBooking);
-        alert(json.courtBooking.name +"have book " + json.courtBooking.court + "for" + json.courtBooking.hour + "added to your list ")
+        alert(json.courtBooking.name +" have book " + json.courtBooking.court + " for " + json.courtBooking.hour + " & added to your list. Please Check You Booking List ")
     });
 }
 
