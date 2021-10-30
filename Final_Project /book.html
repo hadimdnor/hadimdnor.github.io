@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Table Booking App - Booking Page</title>
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <!--Nav Bar = copy form bootstrap-->
+
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Sport Arena Booking App</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="book.html">Book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="list.html">List</a>
+                            </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+
+       
+        <!-- Jumbotron -->
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4"> You are here! </h1>
+                    <p class="lead">Make decission about which court you want to play? </p>
+                    <ul class="list-unstyled">
+                        <li class="media">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsFaRGFHVjhWYe_N7YBmNd7jKEthMdkdCMhg&usqp=CAU" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Court A</h5>
+                            <p>There is 3 court for A type of court where its suitable for 20 people in one game. Artificial grass will help suport your shoes and play like a star</p>
+                          </div>
+                        </li>
+                        <li class="media my-4">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWiMr22A61RAbgcpXdSeImCoAIWzFvnRxJW5lsnCcRLUabOLXinSc__KuWJFiWyhOqrjc&usqp=CAU" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Court B</h5>
+                            <p>This court come with sport carpet replacing the grass. smoth carpet will help your balance while having great shoot. There is 3 court for your selection. This Suitable for 14 palyers in one game.   </p>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsMA3O03owTqCT0-Y9m3u802zPg6qOEgiiJ5kEmmIJsNw5nOIP_3Bm4OjujpVwBV5lKQc&usqp=CAU" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Court C</h5>
+                            <p>Small Size Court able to accomadate 10 players in one time. This Court have a olympic standard grass for your feeling like a reafl futsall player </p>
+                          </div>
+                        </li>
+                      </ul>
+                  </div>
+            </div>
+        </div>
+        
+        <!-- Booking Form -->
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="taxt" class="form-control" id="userName" >
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="userEmail" >
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+            </div>      
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Court</label>
+                    <select class="form-control" id="userCourt">
+                      <option>A1</option>
+                      <option>A2</option>
+                      <option>A3</option>
+                      <option>B4</option>
+                      <option>B5</option>
+                      <option>B6</option>
+                      <option>C7</option>
+                      <option>C8</option>
+                      <option>C9</option>
+                    </select>
+              </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Hour</label>
+                    <select class="form-control" id="playHour">
+                      <option>30 Min</option>
+                      <option>1 Hour</option>
+                      <option>1 Hour & 30 Min</option>
+                      <option>2 Hours</option>
+                      <option>2 Hours & 30 Min</option>
+                      <option>3 Hours</option>
+                      <option>3 Hour & 30 Min</option>
+                      <option>4 Hours</option>
+                    </select>
+              </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Remarks</label>
+                    <textarea class="form-control" id="userRemarks" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary float-right" id="bookNow">Book Now</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+
+    <script src="js/book.js"></script>
+</body>
+</html>
